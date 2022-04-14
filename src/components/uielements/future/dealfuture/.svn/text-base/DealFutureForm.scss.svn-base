@@ -1,0 +1,20 @@
+ .ant-form-horizontal .ant-form-item-label {
+  width: 120px;
+}
+
+ .detaildata.labelDevise .ant-form-item-label{
+     width: 50px !important;
+   }
+   //width: 300px !important;
+   //margin-left: -35px !important;
+
+ .ant-form-item-label > label {
+  float: left;
+}
+
+ .ant-tabs-tab-active, .ant-menu-item-selected {
+  background-color: #e6f7ff;
+}
+.ant-tabs .ant-tabs-left-bar .ant-tabs-tab {
+  text-align: left !important;
+}

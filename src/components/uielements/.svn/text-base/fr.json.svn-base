@@ -1,0 +1,32 @@
+
+{
+    "datepicker": {
+        "toggleCalendar": "Basculer le calendrier"
+    },
+    "calendar": {
+        "today": "Aujourd'hui"
+    },
+    "dateinput": {
+        "increment": "Augmenter la valeur",
+        "decrement": "Diminuer la valeur"
+    },
+    "datetimepicker": {
+        "date": "Date",
+        "time": "Heur",
+        "cancel": "Annuler",
+        "set": "Ensemble"
+    },
+    "timepicker": {
+        "set": "Ensemble",
+        "cancel": "Annuler",
+        "now": "Ahora",
+        "selectNow": "sélectionner",
+        "toggleTimeSelector": "Basculer le sélecteur de temps",
+        "toggleClock": "Basculer l'horloge"
+    },
+    "daterangepicker": {
+        "swapStartEnd": "Permuter les valeurs de début et de fin",
+        "start": "Début",
+        "end": "Fin"
+    }
+}

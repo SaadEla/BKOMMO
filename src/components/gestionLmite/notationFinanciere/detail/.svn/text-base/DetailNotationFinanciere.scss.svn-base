@@ -1,0 +1,10 @@
+.detail-notationFinanciere{
+  .ant-form-horizontal  {
+    .ant-form-item-label{
+      width: 110px !important;
+    }
+    .detail-notationFinanciere-popup-echeance{
+      width: 200px !important;
+    }
+  }
+}

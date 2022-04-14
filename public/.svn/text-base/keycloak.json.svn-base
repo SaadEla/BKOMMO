@@ -1,0 +1,8 @@
+{
+  "realm": "bmcek",
+  "auth-server-url": "http://10.110.101.240/auth/",
+  "ssl-required": "external",
+  "resource": "fe_bkommo-manager",
+  "public-client": true,
+  "confidential-port": 0
+}

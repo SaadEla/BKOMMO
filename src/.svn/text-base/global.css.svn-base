@@ -1,0 +1,432 @@
+/********** Add Your Global CSS Here **********/
+
+h1, h2, h3, h4, h5, h6, a, p, li, input, textarea, span, div, html, body, html a {
+    margin-bottom: 0;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+ul {
+    -webkit-padding-start: 0px;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.ant-popover-placement-bottom > .ant-popover-content > .ant-popover-arrow:after, .ant-popover-placement-bottomLeft > .ant-popover-content > .ant-popover-arrow:after, .ant-popover-placement-bottomRight > .ant-popover-content > .ant-popover-arrow:after, .ant-popover-placement-top > .ant-popover-content > .ant-popover-arrow:after, .ant-popover-placement-topLeft > .ant-popover-content > .ant-popover-arrow:after, .ant-popover-placement-topRight > .ant-popover-content > .ant-popover-arrow:after {
+    left: 0;
+    margin-left: -4px;
+}
+
+/********** Add Your Global RTL CSS Here **********/
+
+/* Popover */
+
+html[dir='rtl'] .ant-popover {
+    text-align: right;
+}
+
+/* Ecommerce Card */
+
+html[dir='rtl'] .isoCardInfoForm .ant-input {
+    text-align: right;
+}
+
+/* Modal */
+
+html[dir='rtl'] .has-success.has-feedback:after, html[dir='rtl'] .has-warning.has-feedback:after, html[dir='rtl'] .has-error.has-feedback:after, html[dir='rtl'] .is-validating.has-feedback:after {
+    left: 0;
+    right: auto;
+}
+
+html[dir='rtl'] .ant-modal-close {
+    right: inherit;
+    left: 0;
+}
+
+html[dir='rtl'] .ant-modal-footer {
+    text-align: left;
+}
+
+html[dir='rtl'] .ant-modal-footer button + button {
+    margin-left: 0;
+    margin-right: 8px;
+}
+
+html[dir='rtl'] .ant-confirm-body .ant-confirm-content {
+    margin-right: 42px;
+}
+
+html[dir='rtl'] .ant-btn > .anticon + span, html[dir='rtl'] .ant-btn > span + .anticon {
+    margin-right: 0.5em;
+}
+
+html[dir='rtl'] .ant-btn-loading span {
+    margin-left: 0;
+    margin-right: 0.5em;
+}
+
+html[dir='rtl'] .ant-btn.ant-btn-loading:not(.ant-btn-circle):not(.ant-btn-circle-outline) {
+    padding-left: 25px;
+    padding-right: 29px;
+}
+
+html[dir='rtl'] .ant-btn.ant-btn-loading:not(.ant-btn-circle):not(.ant-btn-circle-outline) .anticon {
+    margin-right: -14px;
+    margin-left: 0;
+}
+
+/* Confirm */
+
+html[dir='rtl'] .ant-modal.ant-confirm .ant-confirm-body > .anticon {
+    margin-left: 16px;
+    margin-right: 0;
+    float: right;
+}
+
+html[dir='rtl'] .ant-modal.ant-confirm .ant-confirm-btns {
+    float: left;
+}
+
+html[dir='rtl'] .ant-modal.ant-confirm .ant-confirm-btns button + button {
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+/* Message */
+
+html[dir='rtl'] .ant-message .anticon {
+    margin-left: 8px;
+    margin-right: 0;
+}
+
+/* Pop Confirm */
+
+html[dir='rtl'] .ant-popover-message-title {
+    padding-right: 20px;
+    padding-left: 0;
+}
+
+html[dir='rtl'] .ant-popover-buttons {
+    text-align: left;
+}
+
+/* Notification */
+
+html[dir='rtl'] .ant-notification-notice-closable .ant-notification-notice-message {
+    padding-left: 24px;
+    padding-right: 0;
+}
+
+html[dir='rtl'] .ant-notification-notice-with-icon .ant-notification-notice-message, html[dir='rtl'] .ant-notification-notice-with-icon .ant-notification-notice-description {
+    margin-right: 48px;
+}
+
+html[dir='rtl'] .ant-notification-notice-close {
+    right: auto;
+    left: 16px;
+}
+
+html[dir='rtl'] .ant-notification-notice-with-icon {
+    left: 0;
+}
+
+/* Dropzone */
+
+html[dir='rtl'] .dz-hidden-input {
+    display: none;
+}
+
+tr.k-master-row:hover {
+    color: white !important;
+    background-color: #a8b6be !important;
+    cursor: pointer;
+}
+
+.k-grid col.k-sorted, .k-grid th.k-sorted {
+    background-color: rgba(33, 150, 243, 0.07) !important;
+}
+
+.k-grid-header .k-sorted > .k-link {
+    color: rgba(19, 105, 180, 0.9);
+    font-weight: bold;
+}
+
+/* Kendi Grid commomn style*/
+
+.k-grid-header tr {
+    font-weight: bold;
+}
+
+.k-grid-header .k-header {
+    border-color: #ded9d9;
+    text-align: center;
+    color: #fff;
+    font-family: 'texgyreheroscn-bold' !important;
+    background-color: rgba(19, 105, 180, 0.9) !important;
+}
+
+.k-widget.k-grid {
+    overflow: auto;
+}
+
+/* Grid footer */
+
+.k-pager-wrap {
+    box-sizing: border-box;
+    background-color: white;
+    float: left;
+    overflow: auto;
+}
+
+.k-pager-numbers .k-link.k-state-selected {
+    color: #ffff !important;
+}
+
+.k-pager-wrap .k-link, .k-pager-wrap .k-state-selected {
+    color: rgba(19, 105, 180, 0.9) !important;
+    background-color: #fff;
+    border: 1px solid rgba(33, 37, 41, .125) !important;
+}
+
+.k-pager-numbers .k-link.k-state-selected {
+    color: #ffff;
+}
+
+.k-pager-numbers .k-link, .k-pager-numbers .k-link:link {
+    color: rgba(19, 105, 180, 0.9);
+}
+
+.k-state-selected {
+    color: #fff;
+    background-color: #00bdbb !important;
+}
+
+.k-state-selected:hover {
+    color: #fff;
+    background-color: #00bdbb !important;
+}
+
+tr.k-master-row:hover {
+    color: white !important;
+    background-color: #a8b6be !important;
+    cursor: pointer;
+}
+
+
+.k-grid-header {
+    padding: 0 !important;
+}
+
+.k-grid .k-grid-content {
+    overflow-x: auto;
+}
+
+/*
+.k-pager-wrap {
+  background-color: #f6f6f6 !important;
+  width: 100% !important;
+  min-width: 980px;
+}
+
+*/
+
+.ant-menu-submenu-inline .ant-menu-item-only-child {
+    height: 33px !important;
+}
+
+.apexcharts-canvas {
+    margin: auto;
+}
+
+.centerAlign {
+    text-align: center !important;
+}
+
+.rightAlign {
+    text-align: right !important;
+}
+
+.historiqueGrid {
+    position: relative !important;
+    height: 580px !important;
+}
+
+.historiqueGrid .k-pager-wrap {
+    position: absolute !important;
+    bottom: 0 !important;
+    width: 100% !important;
+}
+
+.recapTresoGrid {
+    font-weight: bold !important;
+}
+
+.btn-header-style {
+    border-radius: 10px !important;
+    color: rgba(19, 105, 180, 0.9) !important;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.btn-remove-style {
+    border-radius: 10px !important;
+    color: orangered !important;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #fafbfc;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.ant-form-item-label > label {
+    font-family: open sans, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+    color: #676a6c !important;
+    font-weight: 700 !important;
+    font-size: 11.5px !important;
+}
+
+input, .ant-select-selector {
+    font-size: 12px !important;
+    font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-stretch: 100%;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: 400;
+}
+
+.ant-select-item {
+    font-size: 10px !important;
+    font-weight: 600;
+    color: #676a6c !important;
+}
+
+th, td {
+    font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-size: 11px !important;
+    font-weight: 400 !important;
+}
+
+.ant-menu-submenu-popup .ant-menu {
+    background: rgb(45 52 70) !important;
+
+}
+
+.ant-menu-submenu-popup .ant-menu-item > label {
+    color: rgba(255, 255, 255, 0.65) !important;
+}
+
+.ant-menu-submenu-popup .ant-menu-item > a {
+    color: rgba(255, 255, 255, 0.65) !important;
+}
+
+.ant-menu-submenu-popup .ant-menu-item > a:hover {
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+.ant-menu-item-selected {
+    color: rgba(255, 255, 255, 1) !important;
+    background: black !important;
+}
+
+.ant-divider-horizontal.ant-divider-with-text-center::before, .ant-divider-horizontal.ant-divider-with-text-left::before, .ant-divider-horizontal.ant-divider-with-text-right::before, .ant-divider-horizontal.ant-divider-with-text-center::after, .ant-divider-horizontal.ant-divider-with-text-left::after, .ant-divider-horizontal.ant-divider-with-text-right::after {
+
+    border-top: 1px solid #00bdbb !important;
+
+}
+
+.detaildata .ant-input[disabled] {
+    color: rgba(0, 0, 0, 0.65) !important;
+    background-color: #FFF !important;
+    cursor: not-allowed;
+    opacity: 1 !important;
+    border: 0.1px solid #FFF !important;
+}
+
+.detailstatus .ant-input[disabled] {
+    color: rgba(19, 105, 180, 0.9) !important;
+    background-color: #FFF !important;
+    cursor: not-allowed;
+    opacity: 1 !important;
+    border: 0.1px solid #FFF !important;
+    font-weight: 700;
+}
+
+.newcalcule .ant-input[disabled] {
+    color: rgba(0, 0, 0, 0.65) !important;
+    background-color: #fbfbfb !important;
+    cursor: not-allowed;
+    opacity: 1 !important;
+    color: #00bdbb !important;
+}
+
+.newcalcule .ant-input-affix-wrapper-disabled:hover {
+    border: 0.1px solid #f5f5f5 !important;
+
+}
+
+.newcalcule .ant-input-affix-wrapper-disabled {
+    border: 0.1px solid rgba(19, 105, 180, 0.9) !important;
+    color: #00bdbb !important;
+    background-color: #fbfbfb !important;
+    cursor: not-allowed;
+    opacity: 1 !important;
+}
+
+.labelDevise .ant-form-item-label {
+    width: 80px !important;
+}
+
+.btn-show-colopse {
+    width: 20% !important;
+    color: #24386d !important;
+    background: #fafbfc !important;
+    border-color: #fafbfc !important;
+}
+.input-search-style{
+  height:30px !important;
+  width: 80% !important;
+}
+
+.bkm-label {
+    font-family: open sans, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+    color: #676a6c !important;
+    font-weight: 700 !important;
+    font-size: 11.5px !important;
+    text-align: end !important;
+}
+
+
+.ant-menu-submenu-selected{
+    border-left: 4px solid #1c84c6!important;
+}
+.ant-menu-submenu-selected.ant-menu-submenu-vertical {
+    background: black !important;
+}
+.dividerBar {
+    background: #EAEAEA;
+    cursor: col-resize;
+    margin: 2px;
+}

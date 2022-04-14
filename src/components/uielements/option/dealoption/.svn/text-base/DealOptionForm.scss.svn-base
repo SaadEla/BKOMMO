@@ -1,0 +1,23 @@
+ .ant-form-horizontal .ant-form-item-label {
+  width: 140px !important;
+}
+ .ant-form-item-label > label {
+  float: right !important;
+}
+/*.ant-form-item-label > label {
+  float: right !important;
+}*/
+ .ant-tabs-tab-active, .ant-menu-item-selected {
+  background-color: #e6f7ff;
+}
+.ant-tabs .ant-tabs-left-bar .ant-tabs-tab {
+  text-align: left !important;
+}
+ .ant-form-item {
+   margin-bottom: 7px !important;
+ }
+ .form-left-part{
+   .ant-form-item-label {
+     width: 102px !important;
+   }
+ }

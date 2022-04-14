@@ -1,0 +1,176 @@
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background : url("landing-bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.k-calendar-container{
+  z-index: 1000 !important;
+}
+td{
+  white-space: nowrap !important;
+}
+.ant-btn-background-ghost.ant-btn-primary {
+  color: rgba(19,105,180,0.9) !important;
+  background-color: transparent;
+  border-color: rgba(19,105,180,0.9) !important;
+  text-shadow: none;
+  border-radius: 3px;
+  font-size: 12.7px;
+  font-weight: 600;
+}
+.ant-card-head-title {
+  color: rgba(19,105,180,0.9) !important;
+}
+
+.ant-btn-background-ghost.ant-btn-primary:hover {
+  color: white !important;
+  background-color: rgba(19,105,180,0.9) !important;
+  border-color: rgba(19,105,180,0.9) !important;
+  text-shadow: none;
+}
+.ant-btn-background-ghost.ant-btn-primary:disabled {
+  color: rgba(0,0,0,.25) !important;
+  background-color: white !important;
+  border-color: rgba(0,0,0,.25) !important;
+  text-shadow: none;
+}
+.k-grid-header, .k-grid-toolbar, .k-grouping-header, .k-grid-add-row, .k-grid-footer {
+  color: #656565;
+  background-color: rgba(23, 41, 117, 0.02) !important;
+}
+.ant-tabs-nav .ant-tabs-tab-active {
+  color: rgba(19,105,180,0.9) !important;
+  font-weight: 500;
+  outline: none;
+}
+.ant-spin-dot-item {
+  background-color: rgba(19,105,180,0.9) !important;
+}
+.ant-tabs-ink-bar {
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  z-index: 1;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 0;
+  height: 2px;
+  background-color: rgba(19,105,180,0.9) !important;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+.ant-tabs-tab-active, .ant-menu-item-selected {
+  background-color: rgba(23, 41, 117, 0.08) !important;
+}
+.ant-modal-title {
+  margin: 0;
+  color: rgba(19,105,180,0.9) !important;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  word-wrap: break-word;
+}
+.k-button.k-primary:focus, .k-button.k-primary.k-state-focused {
+  box-shadow: 0 0px 0px 0 rgba(255,99,88,0.4) !important;
+}
+.ant-divider-horizontal {
+  display: block;
+  clear: both;
+  width: 100%;
+  min-width: 100%;
+  height: 1px;
+  margin: 10px 0 !important;
+}
+.bODQnn {
+  width: 100%;
+  padding-top: 24px !important;
+  padding: 35px;
+  background-color: #ffffff;
+  border: 1px solid #e9e9e9;
+  height: 100%;
+}
+
+
+
+.ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+  color: #fff;
+  background:  rgba(19,105,180,0.9) !important;
+  border-color: rgba(19,105,180,0.9) !important;
+  box-shadow: none !important;
+}
+.ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover {
+  color: #fff !important;
+}
+.ant-radio-button-wrapper:hover {
+  position: relative;
+  color: rgba(19,105,180,0.9) !important;
+}
+
+.bkm-btn-danger:hover {
+  color: #fff !important;
+  background-color: #ff4d4f !important;
+  border-color: #ff4d4f !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+}
+.bkm-btn-danger {
+  color: #ff4d4f !important;
+  background-color: #fff !important;
+  border-color: #ff4d4f !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+}
+.ant-col {
+  position: relative;
+  max-width: 100%;
+  min-height: 1px;
+ /* width: 194px !important;*/
+}
+.k-grouping-header, .k-grouping-header-flex{
+  display: none !important;
+}
+.centerAlign{
+  text-align: center !important;
+}
+th{
+  text-align: center !important;
+}
+.centerRight{
+  text-align: right !important;
+}
+.centerLeft{
+  text-align: left !important;
+}
+tr.k-master-row:hover {
+  color: white !important;
+  background-color: #a8b6be !important;
+  cursor: pointer;
+}
+.k-grid-header .k-header {
+  border-color: #ded9d9 !important;
+  text-align: center !important;
+  color: #fff !important;
+  background-color: rgba(19,105,180,0.9) !important;
+}
+.isomorphicSidebar.ant-layout-sider-collapsed .isoLogoWrapper h3 a {
+  font-size: 21px !important;
+  font-weight: 300 !important;
+  letter-spacing: 3px !important;
+}

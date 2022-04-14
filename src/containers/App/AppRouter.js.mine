@@ -1,0 +1,152 @@
+import React from "react";
+import { Route, Switch, Link } from "react-router-dom";
+import { Redirect } from 'react-router'
+import Menu from '../../components/uielements/menu';
+import FourZeroFour from '../Page/404';
+import BlankPage from '../blankPage';
+import SubMenu from "antd/lib/menu/SubMenu";
+import Future from "../DealCapture/Future/future";
+import Treso from "../Treso/Treso";
+
+
+
+// to-do set component path
+const ROUTES = [
+  {path:"", name:"DEAL CAPTURE", key:"DEAL_CAPTURE", exact:false, icon:"ion-ios-more", component:Future,
+   routes : [
+    {path:"/app/dealcapture/future", name:"FUTURE", key:"FUTURE", exact:false, icon:"ion-ios-more", component:Future},
+    {path:"/app/dealcapture/forward", name:"FORWARD", key:"FORWARD", exact:false, icon:"ion-ios-more", component:Future},
+    {path:"/app/dealcapture/option", name:"OPTION", key:"OPTION", exact:false, icon:"ion-ios-more", component:Future},
+    {path:"/app/dealcapture/swap", name:"SWAP", key:"SWAP", exact:false, icon:"ion-ios-more", component:Future}
+   ]},
+  {path:"/app/dealcapture/future_t", name:"MARKET DATA", key:"MARKET", exact:true, icon:"ion-ios-more", component:BlankPage,
+   routes : [
+    {path:"/app/dealcapture/future_t", name:"TIERS", key:"TIERS", exact:true, icon:"ion-ios-more", component:BlankPage},
+    {path:"/app/dealcapture/future_t", name:"SOUS JACENT", key:"SOUS_JACENT", exact:true, icon:"ion-ios-more", component:BlankPage},
+    {path:"/app/dealcapture/future_t", name:"CONTRAT", key:"CONTRAT", exact:true, icon:"ion-ios-more", component:BlankPage},
+    {path:"/app/dealcapture/future_t", name:"FEES", key:"FEES", exact:true, icon:"ion-ios-more", component:BlankPage},
+    {path:"/app/dealcapture/future_t", name:"JOURS_FERIERS", key:"JOURS_FERIERS", exact:true, icon:"ion-ios-more", component:BlankPage}
+   ]},
+  {path:"/app/dealcapture/future_t", name:"GESTION DE LIMITE", key:"GEST_LIMIT", exact:true, icon:"ion-ios-more", component:BlankPage,
+   routes : [
+    {path:"/app/dealcapture/future_t", name:"EXPOSITION REPORT", key:"EXP_REPORT", exact:true, icon:"ion-ios-more", component:BlankPage},
+    {path:"/app/dealcapture/future_t", name:"LIMIT SETUP", key:"LIMIT_SETUP", exact:true, icon:"ion-ios-more", component:BlankPage},
+    {path:"/app/dealcapture/future_t", name:"NOTATION FINANCIERE", key:"NOT_FIN", exact:true, icon:"ion-ios-more", component:BlankPage},
+    {path:"/app/dealcapture/future_t", name:"EXTERNAL USED", key:"EXT_USED", exact:true, icon:"ion-ios-more", component:BlankPage}
+   ]},
+  {path:"/app/dealcapture/future_t", name:"PNL REPORT", key:"PNL_REPORT", icon:"ion-ios-more",  component : AppRouter,
+   routes : [
+     {path:"/app/dealcapture/future_t", name:"ETAT PNL", key:"ETAT_PNL", exact:true, icon:"ion-ios-more", component:BlankPage},
+     {path:"/app/dealcapture/future_t", name:"IMPORT PRIX", key:"IMP_PRIX", exact:true, icon:"ion-ios-more", component:BlankPage}
+   ]},
+  {path:"/app/dealcapture/future_t", name:"PAIEMENT", key:"PAIEMENT", exact:true, icon:"ion-ios-more", component:BlankPage,
+   routes : [
+    {path:"/app/dealcapture/future_t", name:"PAIEMENT SOULTE", key:"PAIE_SOULTE", exact:true, icon:"ion-ios-more", component:BlankPage}
+   ]},
+  {path:"/app/dealcapture/future_t", name:"ADMINISTRATION", key:"ADMIN", exact:true, icon:"ion-ios-more", component:BlankPage,
+  routes : [
+    {path:"/app/dealcapture/future_t", name:"UTILISATEURS", key:"USER", exact:true, icon:"ion-ios-more", component:BlankPage},
+    {path:"/app/dealcapture/future_t", name:"GROUPES", key:"GROUPES", exact:true, icon:"ion-ios-more", component:BlankPage}
+   ]},
+];
+
+/** 
+ * Render a route with potential sub routes
+**/
+const RouteWithSubRoutes = (route) =>{
+    return (
+      <Route
+        path={route.path}
+        exact={route.exact}
+        render={props => <route.component {...props} routes={route.routes} />}
+      />
+    );
+}
+
+/**
+ * Use this component for any new section of routes (any config object that has a "routes" property)
+ */
+function AppRouter ({routes}) {
+    return (
+      <Switch>
+        {routes.map((route, i) => {
+          return <RouteWithSubRoutes key={route.key} {...route} />;
+        })}
+        {<Route component={FourZeroFour} />}
+        
+      </Switch>
+    );
+}
+
+
+
+/**
+ * Render a nested hierarchy of route configs with unknown depth/breadth
+ */
+function AppMenu(props) {
+    
+    /**
+     * Render a single route as a list item link to the config's pathname
+     */
+
+    function subMenu(route){
+        return (
+            <Menu.Item style={props.submenuStyle} key={route.key}>
+                  <Link style={props.submenuColor} to={route.path}>
+                    {route.name}
+                  </Link>
+            </Menu.Item>
+        )
+    }
+
+    function singleRoute(route) {
+      return (
+        <Menu.Item key={route.key}>
+            <Link to={route.path}>
+            <span className="isoMenuHolder" style={props.submenuColor}>
+                <i className={route.icon} />
+                <span className="nav-text">
+                   {route.name}
+                </span>
+            </span>
+            </Link>
+        </Menu.Item>
+      );
+    }
+  
+    // loop through the array of routes and generate an unordered list
+    return (
+        <Menu {...props}>
+            {props.routes.map(route => {
+            // if this route has sub-routes, then show the ROOT as a list item and recursively render a nested list of route links
+            if (route.routes) {
+                return (
+                    <SubMenu
+                        key={route.key}
+                        title={
+                        <span className="isoMenuHolder" style={props.submenuColor}>
+                            <i className={route.icon} />
+                            <span className="nav-text">
+                              {route.name}
+                            </span>
+                        </span>}
+                    >
+                      {route.routes.map(route => {
+                          return subMenu(route)
+                      })}
+                    </SubMenu>
+                );
+            }
+    
+            // no nested routes, so just render a single route
+            return singleRoute(route);
+            })}
+        </Menu>
+      
+    );
+  }
+
+
+
+export {AppRouter,AppMenu};
+export default ROUTES;

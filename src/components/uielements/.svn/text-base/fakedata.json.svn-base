@@ -1,0 +1,51 @@
+
+[{
+    "KondorID" : 283,
+    "TradeDate" : "07/03/2013",
+    "Broker" : "NEWEDGE - NEWEDGE GROUP",
+    "Contrat" : "MATIF-CA(MAY13)",
+    "Sens" : "Achat",
+    "Quantite" : 236,
+    "prix" : 230.5,
+    "commision" : 1,
+    "statut" : "Validé MO",
+    "creePar" : "System",
+    "maturityDate" : "10/05/2013"
+}, {
+    "KondorID" : 1791,
+    "TradeDate" : "20/01/2015",
+    "Broker" : "MACQUARIE - MACQUARIE",
+    "Contrat" : "CBT-SM(MAY15)",
+    "Sens" : "Achat",
+    "Quantite" : 25,
+    "prix" : 317,
+    "commision" : 5.96,
+    "statut" : "Validé MO",
+    "creePar" : "System",
+    "maturityDate" : "30/04/2015"
+}, {
+    "KondorID" : 283,
+    "TradeDate" : "07/03/2013",
+    "Broker" : "NEWEDGE - NEWEDGE GROUP",
+    "Contrat" : "MATIF-CA(MAY13)",
+    "Sens" : "Achat",
+    "Quantite" : 236,
+    "prix" : 230.5,
+    "commision" : 1,
+    "statut" : "Validé MO",
+    "creePar" : "System",
+    "maturityDate" : "10/05/2013"
+}, {
+    "KondorID" : 1791,
+    "TradeDate" : "20/01/2015",
+    "Broker" : "MACQUARIE - MACQUARIE",
+    "Contrat" : "CBT-SM(MAY15)",
+    "Sens" : "Achat",
+    "Quantite" : 25,
+    "prix" : 317,
+    "commision" : 5.96,
+    "statut" : "Validé MO",
+    "creePar" : "System",
+    "maturityDate" : "30/04/2015"
+}]
+

@@ -1,0 +1,9 @@
+.header-swap Button{
+  //margin-left: 10px !important;
+}
+.header-swap Button:hover{
+ // background-color: transparent !important;
+}
+.my-custom-icon-class:before {
+  content: "\e13a"; /* Adds a glyph using the Unicode character number */
+}
